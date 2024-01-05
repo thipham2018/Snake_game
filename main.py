@@ -130,14 +130,15 @@ while True:
         b = old_fruit[index -1].ycor()
 
         old_fruit[index].goto(a, b)
+
     if len(old_fruit) > 0:
         a = snake.xcor()
         b = snake.ycor()
         old_fruit[0].goto(a, b)
     snake_move()
 
-    # Snake & border situation
-    if snake.xcor() > 200 or snake.xcor() < -300 or snake.xcor() > 240 or snake.xcor() < -204:
+    # Snake & border collision
+    if snake.xcor() > 280 or snake.xcor() < -300 or snake.xcor() > 240 or snake.xcor() < -204:
         time.sleep(1)
         screen.clear()
         screen.bgcolor("turquoise")
