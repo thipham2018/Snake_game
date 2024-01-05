@@ -107,4 +107,10 @@ screen.onkeypress(snake_go_right, "Right")
 while True:
     screen.update()
 
+    # Snake & fruit collision
+    if snake.distance(fruit) < 20:
+        x = random.randint(-290, 270)
+        y = random.randint(-240, 240)
+
+
 
