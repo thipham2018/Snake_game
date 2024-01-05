@@ -75,3 +75,17 @@ def snake_go_left():
 def snake_go_right():
     if snake.direction != "left":
         snake.direction = "right"
+
+def move():
+    if snake.direction == "up":
+        y = snake.ycor()
+        snake.sety(y + 20)
+    if snake.direction == "down":
+        y = snake.ycor()
+        snake.sety(y - 20)
+    if snake.direction == "left":
+        x = snake.xcor()
+        snake.sety(x + 20)
+    if snake.direction == "right":
+        x = snake.xcor()
+        snake.sety(x + 20)
