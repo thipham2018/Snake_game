@@ -60,4 +60,18 @@ scoring.goto(0, 300)
 scoring.write("Score: ", align="center", font=("Courier", 24, "bold"))
 
 # define how to move
-#def snake_go_up():
+def snake_go_up():
+    if snake.direction != "down":
+        snake.direction = "up"
+
+def snake_go_down():
+    if snake.direction != "up":
+        snake.direction = "down"
+
+def snake_go_left():
+    if snake.direction != "right":
+        snake.direction = "left"
+
+def snake_go_right():
+    if snake.direction != "left":
+        snake.direction = "right"
