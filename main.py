@@ -138,7 +138,7 @@ while True:
     snake_move()
 
     # Snake & border collision
-    if snake.xcor() > 280 or snake.xcor() < -300 or snake.xcor() > 240 or snake.xcor() < -204:
+    if snake.xcor() > 280 or snake.xcor() < -300 or snake.xcor() > 240 or snake.xcor() < -240:
         time.sleep(1)
         screen.clear()
         screen.bgcolor("turquoise")
