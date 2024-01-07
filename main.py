@@ -157,7 +157,7 @@ while True:
 
         time.sleep(delay)
 
-#turtle.Terminator()
+turtle.Terminator()
 
 
 
